@@ -8,8 +8,11 @@ The repository contains the fault detection algorithm demonstrated on a swarm of
 This repository comprises the following:
 
 machine_vision -- used to run the ArUco-based tracking system for the e-puck robot swarm
+
 firmware -- for the e-puck, adapted from https://github.com/demiurge-project/argos3-epuck
+
 src -- the ARGoS e-puck plugin enhanced with a virtual range-and-bearing sensor, and the implementation of the fault-detection algorithm.
+
 
 Fault-detection experiments are performed for homogenous swarm behaviours -- aggregation, dispersion, and homing. See ARGoS configuration file src/faultdetection/epuck_hom_swarm.argos for details.
 
