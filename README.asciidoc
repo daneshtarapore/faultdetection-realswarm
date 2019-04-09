@@ -1,0 +1,16 @@
+=====================================================================================
+ Fault detection in a swarm of physical robots based on behavioural outlier detection
+=====================================================================================
+
+The repository contains the fault detection algorithm demonstrated on a swarm of real e-puck robots. It uses the ARGoS simulation framework available at https://www.argos-sim.info, and allows easy porting of the code from simulation to physical robot experiments.
+
+
+This repository comprises the following:
+
+machine_vision -- used to run the ArUco-based tracking system for the e-puck robot swarm
+firmware -- for the e-puck, adapted from https://github.com/demiurge-project/argos3-epuck
+src -- the ARGoS e-puck plugin enhanced with a virtual range-and-bearing sensor, and the implementation of the fault-detection algorithm.
+
+Fault-detection experiments are performed for homogenous swarm behaviours -- aggregation, dispersion, and homing. See ARGoS configuration file src/faultdetection/epuck_hom_swarm.argos for details.
+
+The supplementary materials including experiment snapshot frames, links to data logs and robot swarm videos is available at https://doi.org/10.5281/zenodo.2276647.
